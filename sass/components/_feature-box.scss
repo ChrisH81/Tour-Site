@@ -8,6 +8,7 @@
   transition: transform .3s;
 
   &__icon {
+    transition: transform 1s;
     font-size: 6rem;
     margin-bottom: .5rem;
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
@@ -18,7 +19,12 @@
 
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
+
+    & > i {
+      transform: scale(1.2);
+    }
   }
+
 
   &__text {
 
